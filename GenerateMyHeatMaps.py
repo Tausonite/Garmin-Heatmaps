@@ -9,6 +9,7 @@ import os
 import gmplot
 
 print(os.getcwd())
+#load data
 df1 = pd.read_csv(r"C:\Users\samou\Desktop\Python\HeatMap Project\track_points.csv", header=None)
 df2 = pd.read_csv(r"C:\Users\samou\Desktop\Python\HeatMap Project\Run2.csv", header=None)
 dfcomp = pd.read_csv(r"C:\Users\samou\Desktop\Python\HeatMap Project\CompiledRuns.csv", header=None)
@@ -30,6 +31,8 @@ dfcomp.rename(columns={0:'Longitude',1:'Latitude'}, inplace=True)
 df3 = pd.concat([df1,df2,dfcomp])
 
 #Not sure this is necessary
+#Yes this is necessary, the gmplots package will throw a d_type related error if data type isn't changed
+#because the data is a python object type and not an int/float
 Latitude = df3['Latitude']
 Latitude = Latitude.astype(str).astype(float)
 Longitude = df3['Longitude']
