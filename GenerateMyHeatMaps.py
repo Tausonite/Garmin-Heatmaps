@@ -45,4 +45,7 @@ mymap = gmplot.GoogleMapPlotter(33.86,151.20,13,'AIzaSyAm71x2rqDItcWRBtjVR22CCg_
 #pass lat, long from dataframe to gmplot heatmap function
 mymap.heatmap(Latitude, Longitude)
 mymap.draw("letsgo.html")
-#Step 4: think about applying OOP to step 1-2 to automate that process?
+
+#now what? this is clunky and requires direct changes to the code for every run added
+#think about automating the data cleaning if that's possible but it might not be
+#also running this with some sort of GUI would be ideal but also perhaps not possible
