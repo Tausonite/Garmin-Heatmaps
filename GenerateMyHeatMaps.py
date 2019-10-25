@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct  4 11:40:26 2019
-
-@author: samou
-"""
 import pandas as pd
 import os
 import gmplot
