@@ -34,7 +34,7 @@ Longitude = Longitude.astype(str).astype(float)
 
 #Step 3: overlay latitude and longitude on maps using code from other file (done)
 #generate gmaps basemap for overlaying run data (lat, long set to Sydney), API key
-mymap = gmplot.GoogleMapPlotter(33.86,151.20,13,'AIzaSyAm71x2rqDItcWRBtjVR22CCg_FXH8LGhU')
+mymap = gmplot.GoogleMapPlotter(33.86,151.20,13,'MY API KEY HERE')
 
 #pass lat, long from dataframe to gmplot heatmap function
 mymap.heatmap(Latitude, Longitude)
