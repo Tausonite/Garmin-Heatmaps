@@ -41,5 +41,4 @@ mymap.heatmap(Latitude, Longitude)
 mymap.draw("letsgo.html")
 
 #now what? this is clunky and requires direct changes to the code for every run added
-#think about automating the data cleaning if that's possible but it might not be
-#also running this with some sort of GUI would be ideal but also perhaps not possible
+#think about automating the data cleaning to be cleaner as per OOP practices
