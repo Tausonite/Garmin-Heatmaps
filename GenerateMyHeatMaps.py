@@ -9,7 +9,7 @@ df2 = pd.read_csv(r"C:\Users\samou\Desktop\Python\HeatMap Project\Run2.csv", hea
 dfcomp = pd.read_csv(r"C:\Users\samou\Desktop\Python\HeatMap Project\CompiledRuns.csv", header=None)
 
 #Step 1: clean data:
-#Get rid of yuck columns that aren't related to latitude, longitude
+#Get rid of extraneous columns that aren't related to latitude, longitude
 df1.drop([2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],axis=1,inplace=True)
 df1.drop([0],axis=0,inplace=True)
 df2.drop([2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],axis=1,inplace=True)
